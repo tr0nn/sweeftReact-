@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+.personElementDiv{
+    
+    border-style: ridge;
+    display: inline-block;
+    width: 20%;
+    margin-right: 50px;
+}
+li{ 
+    float: left;
+    display: inline;
+}
+.mainDiv{
+    margin-left: 7%;
+}
+.personElementDiv span{
+    display: block;
+}

@@ -1,0 +1,14 @@
+body{
+    margin-left: 10%;
+}
+.detailInfo img{
+    width: 40%;
+}
+.detailInfo {
+    border: 5px;
+    width: 70%;
+    height: 50%;
+}
+.info {
+    border: 2px solid gray;
+}
