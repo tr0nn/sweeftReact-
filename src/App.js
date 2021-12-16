@@ -23,7 +23,7 @@ export default class App extends React.Component {
           <Route path="/" exact component={MainPosts} />
           <Route path="/posts/:id"  component={Datvi} />
 
-          {/* tu ver ipova rac arunda chaiweros amismartebs / gverdze */}
+          {/* tu ver ipova rac arunda chaiweros amismartebs / main gverdze */}
           <Redirect to="/" />
         </Switch>
       </div>

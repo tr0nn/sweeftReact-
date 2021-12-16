@@ -3,13 +3,12 @@ import axios from 'axios';
 import {Link } from 'react-router-dom';
 
 
-const pageNubmer = 1;
-
+let pageNubmer = 1;
 export default class MainPosts extends React.Component {
 state = {
     persons: []
   }
-  
+
   componentDidMount() {
 
     axios.get(`http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${pageNubmer}/20`)
@@ -18,6 +17,7 @@ state = {
         this.setState({ persons });
         console.log(persons)
       })
+      
   }
 
 
@@ -32,7 +32,7 @@ state = {
                 <Link to={`/posts/${item.id}`}>
                 <li key={item.id}> 
                   <img src={`${item.imageUrl}?v=${item.id}`} alt="animal"/>
-                  <span> {item.prefix} {item.name} {item.lastName} </span> 
+                  <span> <h3> {item.prefix} {item.name} {item.lastName}</h3> </span> 
                   <span> {item.title} </span> 
                 </li> 
                 </Link>
