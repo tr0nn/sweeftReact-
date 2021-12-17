@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {useParams } from 'react-router-dom';
 import axios from 'axios';
-//import Friends from './Friends';
 import MainPosts from './mainPosts';
 
 
@@ -17,17 +16,15 @@ function DetailInfo() {
     .then((response)=>{
       console.log(response.data);
       setData(response.data)
-      setHistory(history  +  response.data.prefix + response.data.name + response.data.lastName +" > ")
+      setHistory(history  +  response.data.prefix + response.data.name + response.data.lastName + " > ")
     })
     .catch((error)=>{
       console.log(error);
     })
-
-    
   },[id]);
   return (
    
-    <div>
+    <div className='mainBorder'>
         <div className='detailInfo'> 
             <img src={`${data.imageUrl}?v=${data.id}`} alt='animal'></img> 
                 <div className='info'>

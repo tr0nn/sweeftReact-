@@ -5,39 +5,43 @@ body{
     width: 20%;
     margin-left: 5%;
     margin-top: 0%;
-
 }
 .detailInfo {
     margin-top: 2%;
     width: 95%;
     display: block;
 }
-
 .addressDiv{
     border: 2px solid gray;
     width: 15%;
-    height: 30%;
     display: inline-block;
     margin-left: 1%;
     margin-top: 0px;
     padding-left: 1%;
     font-family: Helvetica;
-    
-    
+    position: absolute;
+    padding-top: 10px;
+    height: 28%;
 }
 .info {
     border: 2px solid gray;
     margin-left: 1%;
     width: 52%;
-    height: 30%;
     display: inline-block;
     padding-left: 1%;
     font-family: Helvetica;
-    
+}
+.info h3{
+    margin-top:4%;
 }
 .history-Friends{
     margin-left: 4%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .addressSpan span{
     margin-top: 10px;
+}
+.mainBorder{
+    border: 2px solid rgb(219, 197, 197);
+    margin-right: 5%;
 }
